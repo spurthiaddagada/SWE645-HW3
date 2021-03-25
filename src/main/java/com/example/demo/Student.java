@@ -1,6 +1,6 @@
 /*Usage of JPA Annotation 
  *Following is POJO for Student represents the data of a student
- * Spurthi Addagada : Developer
+ * Spurthi Addagada,Manish : Developers
  */
 
 package com.example.demo;
