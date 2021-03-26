@@ -31,6 +31,14 @@ public class StudentResource {
     }
 
     @GET
+    @Path("/authors")
+    public String getAuthorNames() {
+    	//System.out.println("stdid from angular is "+stdid);
+        return "Arkansas";
+    }
+    
+    
+    @GET
     public List<String> getStudentIds() {
         Iterable<Student> students = repo.findAll();
         List<String> idList = new ArrayList<String>();
@@ -43,7 +51,8 @@ public class StudentResource {
 
     @POST
     @Consumes("application/json")
-    public List<String> create(Student student) {
+    public List<String> create(Student student) 
+    {
     	System.out.println("student from angular "+student.getStdname());
     	List<String> idList = new ArrayList<String>();
     	try {
@@ -58,7 +67,12 @@ public class StudentResource {
     		}
     		
     	
-    	}catch(Exception e) {
+    	}
+    	
+    	
+    	
+    	
+    	catch(Exception e) {
     		System.out.println(e);
     	}
     	return idList;
