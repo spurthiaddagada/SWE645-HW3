@@ -15,7 +15,7 @@ import javax.ws.rs.Produces;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-@CrossOrigin(origins="http://localhost:4200/")
+
 @Path("/students")
 @Produces("application/json")
 public class StudentResource {
