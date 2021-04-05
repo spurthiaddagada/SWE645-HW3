@@ -15,6 +15,7 @@ public class Student {
     @Id
     private String stdid;
     private String stdname;
+	private String stdlastname;
     private String stdadd;
     private String stdcity;
     private String stdstate;
@@ -37,7 +38,13 @@ public class Student {
     public void setStdid(String stdid) {
         this.stdid = stdid;
     }
+      public String getStdlastname() {
+		return stdlastname;
+	}
 
+	public void setStdlastname(String stdlastname) {
+		this.stdlastname = stdlastname;
+	}
     public String getStdname() {
         return stdname;
     }
